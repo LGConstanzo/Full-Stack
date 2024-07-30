@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar / Registrarse - Shoes Bahía</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="admin-body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" height="120" weight="120" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i> <!-- Ícono de casa de Font Awesome -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content --><div class="container my-5">
+        <h2 class="text-center mb-4">Cargar Nuevo Producto</h2>
+        <form onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="productName">Nombre del Producto:</label>
+                <input type="text" class="form-control" id="productName" name="productName" required>
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Descripción:</label>
+                <textarea class="form-control" id="productDescription" name="productDescription" rows="4" required></textarea>
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Precio:</label>
+                <input type="number" class="form-control" id="productPrice" name="productPrice" step="0.01" required>
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="form-group">
+                <label for="productCategory">Categoría:</label>
+                <select class="form-control" id="productCategory" name="productCategory" required>
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="calzado">Calzado</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="ropa">Ropa</option>
+                </select>
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Imagen del Producto:</label>
+                <input type="file" class="form-control-file" id="productImage" name="productImage" required>
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="form-group">
+                <label for="productStock">Cantidad en Stock:</label>
+                <input type="number" class="form-control" id="productStock" name="productStock" required>
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Cargar Producto</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Shoes Bahía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

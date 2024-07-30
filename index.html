@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Bahía</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="index-body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" height="120" weight="120" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="search-container mx-auto d-none d-lg-flex">
+                <form class="search-form">
+                    <input class="form-control search-input" type="search" placeholder="Buscar producto" aria-label="Buscar">
+                    <button class="btn search-btn" type="submit">Buscar</button>
+                </form>
+            </div>
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <div>Ingresar</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+<div class="carousel-container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100 carousel-img" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100 carousel-img" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jpg" class="d-block w-100 carousel-img" alt="Banner 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+    <!-- Categorías -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">CATEGORIAS</h2>
+        <div class="row">
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="carteras.jpg" class="card-img-top" alt="Carteras">
+                    <div class="card-body">
+                        <h5 class="card-title">CARTERAS</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapatillas.jpg" class="card-img-top" alt="Zapatillas">
+                    <div class="card-body">
+                        <h5 class="card-title">ZAPATILLAS</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="botas.jpg" class="card-img-top" alt="Botas">
+                    <div class="card-body">
+                        <h5 class="card-title">BOTAS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Productos Destacados -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">DESTACADOS</h2>
+        <div class="row">
+            <!-- Seis productos destacados -->
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapato1.jpg" class="card-img-top" alt="Zapato 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato 1</h5>
+                        <p class="card-text">Descripción del Zapato 1.</p>
+                        <p class="card-text"><strong>$99.99</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapato2.jpg" class="card-img-top" alt="Zapato 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato 2</h5>
+                        <p class="card-text">Descripción del Zapato 2.</p>
+                        <p class="card-text"><strong>$109.99</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapato3.jpg" class="card-img-top" alt="Zapato 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato 3</h5>
+                        <p class="card-text">Descripción del Zapato 3.</p>
+                        <p class="card-text"><strong>$89.99</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapato4.jpg" class="card-img-top" alt="Zapato 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato 4</h5>
+                        <p class="card-text">Descripción del Zapato 4.</p>
+                        <p class="card-text"><strong>$119.99</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapato5.jpg" class="card-img-top" alt="Zapato 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato 5</h5>
+                        <p class="card-text">Descripción del Zapato 5.</p>
+                        <p class="card-text"><strong>$79.99</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category-card">
+                <div class="card">
+                    <img src="zapato6.jpg" class="card-img-top" alt="Zapato 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapato 6</h5>
+                        <p class="card-text">Descripción del Zapato 6.</p>
+                        <p class="card-text"><strong>$89.99</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de Admin -->
+    <div class="text-center mb-4">
+        <a href="admin.html" class="btn search-btn">Admin - Cargar Producto</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+
+            <!-- Línea de separación -->
+            <hr class="my-4" style="border-color: white">
+            
+            <!-- Sección del Newsletter -->
+            <div class="row mt-4">
+                <div class="col-12 d-flex align-items-center justify-content-center mb-4">
+                    <h5 class="mr-3 mb-0">Suscríbete a nuestro newsletter:</h5>
+                    <form class="d-flex">
+                        <div class="form-group mb-0 mr-2">
+                            <label for="newsletter-email" class="sr-only">Email:</label>
+                            <input type="email" class="form-control" id="newsletter-email" placeholder="Ingresa tu email" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Línea de separación -->
+            <hr class="my-4" style="border-color: white;">
+    
+            <!-- Secciones Centradas -->
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Somos una tienda en línea dedicada a ofrecer los mejores zapatos y accesorios para nuestros clientes. Nuestra misión es proporcionar productos de alta calidad y un servicio excepcional.</p>
+                </div>
+                <div class="col-md-4 mb-4" id="contacto">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i>Bahía Blanca</li>
+                        <li><i class="fas fa-solid fa-motorcycle"></i>Envíos a domicilio todos los días</li>
+                        <li><a href="mailto:info@shoesbahia.com?Subject=Shoes Bahia" class="register-link"><i class="fas fa-envelope"></i> Email: info@shoesbahia.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.facebook.com/p/Shoes-Bahia-100063497496419/&ved=2ahUKEwjnobaOi82HAxXaqpUCHULVDyoQFnoECBMQAQ&usg=AOvVaw3B2LkxBA3_yej4oXXzuQP_" class="register-link"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/shoes.bahia" class="register-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary py-2 text-center">
+            <p class="mb-0">© 2024 Shoes Bahía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

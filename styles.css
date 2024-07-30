@@ -1,0 +1,359 @@
+/* General */
+/* Definir la fuente local */
+@font-face {
+    font-family: 'Archivo Narrow';
+    src: url('fonts/ArchivoNarrow-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Aplicar la fuente en el cuerpo del documento */
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px; /* Tamaño de fuente predeterminado */
+    line-height: 1.5; /* Altura de línea predeterminada */
+    background-color: #000000; /* Color de fondo general */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el padding predeterminado del cuerpo */
+}
+
+/* Fondo específico para la página de inicio */
+.index-body {
+    background-color: #000000; /* Color de fondo negro para index */
+}
+
+/* Fondo específico para la página de login */
+.login-body {
+    background-color: #ffffff; /* Color de fondo blanco para login */
+}
+
+/* Fondo específico para la página de admin */
+.admin-body {
+    background-color: #ffffff; /* Color de fondo blanco para admin */
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #000000; /* Negro */
+    position: relative; /* Posicionamiento relativo para el z-index */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff; /* Blanco para los enlaces */
+}
+
+.custom-navbar .nav-link:hover {
+    color: #c0c0c0; /* Gris claro al pasar el cursor */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+    flex-grow: 1; /* Permite que el contenedor de búsqueda ocupe el espacio disponible */
+}
+
+.search-form {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente dentro del contenedor */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura que el formulario ocupe el 100% del ancho del contenedor */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.search-input {
+    border-radius: 25px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto oscuro */
+    padding: 12px 20px; /* Mayor padding para más espacio interno */
+    width: 100%; /* Ocupa el 100% del ancho disponible en el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.search-input::placeholder {
+    color: #888888; /* Color del placeholder */
+}
+
+.search-btn {
+    border-radius: 25px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    background-color: #444444; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px 20px; /* Mayor padding para el botón */
+    margin-left: 10px; /* Espaciado a la izquierda del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.search-btn:hover {
+    background-color: #333333; /* Fondo gris más oscuro al pasar el cursor */
+}
+
+/* Carrusel */
+.carousel-container {
+    position: relative; /* Asegura que los indicadores se posicionen correctamente sobre el carrusel */
+    display: block; /* Por defecto, el contenedor del carrusel está visible */
+}
+
+.carousel-inner {
+    position: relative; /* Asegura que los indicadores se posicionen correctamente sobre el carrusel */
+}
+
+.carousel-img {
+    height: 400px; /* Altura del carrusel en pantallas grandes */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+/* Categorías */
+.categories-section {
+    padding: 20px; /* Espacio interno para la sección */
+}
+
+.container.my-5 h2 {
+    font-size: 50px; /* Tamaño del texto del título ajustado */
+    font-weight:bold;
+    margin-top: 60px; /* Espacio arriba del título para evitar solapamiento */
+    margin-bottom: 60px; /* Espacio debajo del título */
+    font-weight: bold; /* Negrita para el título */
+    color: #000000;/* Color del título */
+    background-color: #FDD120;
+}
+
+.category-card {
+    margin-top: 20px; /* Espacio entre el título y las tarjetas */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    background-color: #000000
+}
+
+.category-card .card {
+    border: none; /* Sin borde */
+    transition: transform 0.2s ease-in-out; /* Efecto al pasar el cursor */
+    background-color: #000000;
+    color: #444444
+}
+
+.category-card .card-body {
+    text-align: center; /* Centrar el texto */
+}
+
+.category-card .card:hover {
+    transform: scale(1.05); /* Escala al pasar el cursor */
+    color: #c0c0c0; /* Gris claro al pasar el cursor */
+}
+
+.category-card .card-img-top {
+    object-fit: cover; /* Ajuste de la imagen */
+}
+
+/* Productos Destacados */
+.card-img-top {
+    height: 220px; /* Altura de las imágenes */
+    object-fit: cover; /* Ajuste de la imagen */
+}
+
+.card-body h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 0.9em;
+}
+
+/* Footer */
+.footer {
+    background-color: #6c757d !important; /* Fondo para el footer */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 20px 0;
+}
+
+.footer h5 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer li {
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: #c0c0c0;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
+.footer .form-group {
+    margin-bottom: 1rem;
+}
+
+.bg-secondary {
+    background-color: #343a40 !important; /* Nuevo color */
+}
+
+#newsletter-email {
+    width: 400px; /* Ajusta el ancho según tus necesidades */
+    max-width: 100%; /* Asegura que el campo no se desborde en pantallas pequeñas */
+}
+
+/* Social Icons */
+.footer .social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.footer .social-icons a:hover {
+    color: #c0c0c0;
+}
+
+/* Login */
+.login-body {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
+}
+
+.container {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+}
+
+.footer {
+    margin-top: auto; /* Empuja el pie de página hacia el fondo */
+}
+
+/* Estilo para el enlace de registro */
+.register-link {
+    color: black; /* Color personalizado para el enlace de registro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.register-link:hover {
+    color: #c0c0c0; /* Cambia el color cuando el cursor está sobre el enlace */
+    text-decoration: underline; /* Opcional: agrega un subrayado al pasar el cursor */
+}
+
+/* Responsividad para Mobile (hasta 500px) */
+@media (max-width: 500px) {
+    .carousel-container {
+        display: none; /* Oculta el contenedor del carrusel en pantallas móviles */
+    }
+
+    .categories-section {
+        display: block; /* Asegura que la sección de categorías se muestre */
+    }
+
+    .search-form {
+        display: flex; /* Muestra la barra de búsqueda en móviles */
+    }
+
+    /* Establecer el ancho máximo y centrar la tarjeta */
+    .category-card .card {
+        max-width: 300px; /* Limita el ancho máximo de la tarjeta */
+        margin: auto; /* Centra la tarjeta dentro de su columna */
+    }
+
+/* Ajustar la altura y el ancho máximo de la imagen dentro de la tarjeta */
+    .category-card .card-img-top {
+        height: 300px; /* Altura de las imágenes de las tarjetas en móviles */
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor de la tarjeta */
+        object-fit: cover; /* Mantiene la imagen en proporción y recorta si es necesario */
+    }
+
+    .footer img {
+        width: 30px; /* Tamaño de los iconos sociales */
+    }
+
+    .navbar .form-inline {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        justify-content: center; /* Centrado */
+    }
+
+    .footer .form-control {
+        max-width: 100%;
+    }
+
+    .row.mt-4 {
+        display: none; /* Oculta el contenedor del newsletter en pantallas móviles */
+    }
+
+    .my-4 {
+        display: none; /* Oculta líneas de footer en pantallas móviles */
+    }
+
+    .bg-secondary.py-2.text-center{
+        display: none; /* Oculta el contenedor del copyright en pantallas móviles */
+    }
+}
+
+/* Responsividad para Tablet (501px a 800px) */
+@media (min-width: 501px) and (max-width: 800px) {
+    .carousel-container {
+        display: none; /* Oculta el contenedor del carrusel en pantallas móviles */
+    }
+
+    .categories-section {
+        display: block; /* Asegura que la sección de categorías se muestre */
+    }
+
+   /* Establecer el ancho máximo y centrar la tarjeta */
+    .category-card .card {
+        max-width: 300px; /* Limita el ancho máximo de la tarjeta */
+        margin: auto; /* Centra la tarjeta dentro de su columna */
+    }
+
+/* Ajustar la altura y el ancho máximo de la imagen dentro de la tarjeta */
+    .category-card .card-img-top {
+        height: 300px; /* Altura de las imágenes de las tarjetas en móviles */
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor de la tarjeta */
+        object-fit: cover; /* Mantiene la imagen en proporción y recorta si es necesario */
+    }
+
+    .footer .form-control {
+        max-width: 100%;
+    }
+
+    .row.mt-4 {
+        display: none; /* Oculta el contenedor del newsletter en pantallas móviles */
+    }
+
+    .my-4 {
+        display: none; /* Oculta líneas de footer en pantallas móviles */
+    }
+}
+
+/* Responsividad para Computadoras (mayor a 800px) */
+@media (min-width: 801px) {
+    .carousel-img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Altura para computadoras */
+    }
+
+    .category-card .card-img-top {
+        height: 300px; /* Altura de las imágenes de las tarjetas en computadoras */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
